@@ -6,6 +6,7 @@ on:
 
 jobs:
     run:
+        if: github.repository != 'empyrica/empyrica'
         runs-on: ubuntu-latest
         steps:
             - uses: superbrothers/close-pull-request@v3
@@ -14,7 +15,7 @@ jobs:
                       Thanks for your Pull Request!
                       
                       However, you should instead open your PR on the main repository:
-                      https://github.com/empiriq/empiriq
+                      https://github.com/empyrica/empyrica
                       
                       This repository is what we call a "subtree split": a read-only subset of that main repository.
                       We're looking forward to your PR there!
